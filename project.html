@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framework A.C.T.S. &amp; Decision Memo · Lê Quang Giảng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="mark">LG</span>
+      <span class="name">Lê Quang Giảng</span>
+    </a>
+    <div class="nav-right">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home" data-en="Home">Trang chủ</a></li>
+        <li><a href="index.html#projects" data-en="Projects">Dự án</a></li>
+        <li><a href="inspiration.html" data-en="Inspiration">Cảm hứng</a></li>
+        <li><a href="index.html#contact" data-en="Contact">Liên hệ</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="vi">VI</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="detail-header">
+  <div class="wrap">
+    <a href="index.html" class="back-link" data-en="&larr; Back to portfolio">&larr; Về trang portfolio</a>
+    <h1 data-en="Framework A.C.T.S. &amp; Decision Memo">Framework A.C.T.S. &amp; Decision Memo</h1>
+    <p class="subtitle" data-en="A personal decision-making framework for HR, and its full application to a turnover case, covering (1) findings, (2) a proposal, (3) a rollout plan, and (4) how success is measured.">Một khung ra quyết định cá nhân cho công việc HR, và cách áp dụng trọn vẹn khung đó vào một tình huống turnover, gồm (1) phát hiện, (2) đề xuất, (3) kế hoạch triển khai, và (4) cách đo lường thành công.</p>
+  </div>
+</div>
+
+<nav class="local-nav">
+  <div class="local-nav-inner">
+    <a href="#why" data-en="Why this project">Lý do thực hiện</a>
+    <a href="#framework" data-en="Framework A.C.T.S.">Framework A.C.T.S.</a>
+    <a href="#memo" data-en="Decision Memo">Decision Memo</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     WHY THIS PROJECT
+     ============================================================ -->
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-en="Why I built this">Lý do thực hiện dự án</div>
+      <h2 data-en="A question I couldn't answer casually">Một câu hỏi tôi không thể trả lời qua loa</h2>
+    </div>
+
+    <div class="memo-section">
+      <p data-en="If AI can screen resumes hundreds of times faster than I can, and analyze HR data more precisely than I can, what's left for someone who just entered the HR profession to pursue? The paragraphs below are how I worked through that question for myself, not an attempt to convince anyone else.">Nếu AI có thể sàng lọc CV nhanh hơn tôi hàng trăm lần, phân tích dữ liệu nhân sự chính xác hơn tôi, thì tôi, một người vừa bước vào nghề HR, còn lại gì để theo đuổi? Những đoạn dưới đây là cách tôi tự trả lời câu hỏi đó, không phải để thuyết phục ai khác.</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="I. The anxiety is real, and it deserves an honest look">I. Nỗi bất an là có thật, và xứng đáng được nhìn thẳng</h4>
+      <p data-en="McKinsey estimates AI and automation have the technical potential to displace about 57% of work hours in the US, and the most execution-heavy parts of HR, meaning (1) screening, (2) scheduling, and (3) reporting, are the most automatable. But that number measures the technical potential of a task, not the fate of a profession. The right question isn't whether the HR profession will survive. It's which part of what I do today still needs a human.">McKinsey ước tính AI và tự động hóa có tiềm năng kỹ thuật thay thế khoảng 57% giờ làm việc tại Mỹ, và các mảng thực thi của HR, cụ thể là (1) sàng lọc, (2) lên lịch, và (3) tổng hợp báo cáo, là nhóm dễ tự động hóa nhất. Nhưng con số đó đo tiềm năng kỹ thuật của nhiệm vụ, không phải số phận của cả nghề. Câu hỏi đúng không phải "nghề HR còn tồn tại không", mà là "phần nào trong công việc tôi đang làm hôm nay vẫn cần đến con người."</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="II. Trusting AI completely turned out to be its own risk">II. Tin tưởng tuyệt đối vào AI cũng là một rủi ro</h4>
+      <p data-en="I once thought the safest path was to become excellent at operating AI tools. But hiring research points the other way. A Harvard Business School survey found nearly 9 in 10 employers admit their applicant tracking systems screen out qualified candidates, and a 2025 Harvard Business Review study found AI systems aren't &quot;unfair&quot; in a crude sense. They lock in a single definition of fairness and apply it rigidly to every situation. Humans are just as biased, though, so the better question is who, or what system, is actually capable of noticing and correcting its own bias.">Có giai đoạn tôi từng nghĩ giải pháp an toàn nhất là học vận hành AI thật giỏi. Nhưng nghiên cứu về tuyển dụng lại cho thấy điều ngược lại. Một khảo sát của Harvard Business School cho thấy gần 9/10 nhà tuyển dụng thừa nhận hệ thống ATS của họ đang loại nhầm người đủ năng lực, và một nghiên cứu năm 2025 trên Harvard Business Review chỉ ra AI không "thiếu công bằng" theo nghĩa thô sơ. Nó đóng khung một định nghĩa công bằng duy nhất rồi áp đặt cứng nhắc lên mọi tình huống. Nhưng con người cũng thiên kiến không kém, nên câu hỏi đáng hỏi hơn là ai, hay hệ thống nào, thực sự có khả năng nhận ra và tự điều chỉnh thiên kiến của chính mình.</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="III. What's actually left for a human to do">III. Vậy điều gì thực sự còn lại cho con người?</h4>
+      <p data-en="MIT Sloan's EPOCH framework, made up of Empathy, Presence, Opinion/Judgment, Creativity, and Hope, names the human capabilities AI struggles to replicate, and distinguishes automation (handing a task fully to a machine) from augmentation (AI helping a person do better work). The World Economic Forum also recorded creativity jumping from 6th to 1st place among the fastest-growing global skills. But knowing &quot;humans are still needed&quot; is one thing. Proving that I personally am one of those humans is another, and that's the line between self-reassurance and real preparation.">MIT Sloan đưa ra khung EPOCH, gồm Empathy, Presence, Opinion/Judgment, Creativity, Hope, như những năng lực con người mà AI khó tái tạo, và phân biệt giữa tự động hóa (giao hẳn nhiệm vụ cho máy) với tăng cường (AI hỗ trợ con người làm tốt hơn). Diễn đàn Kinh tế Thế giới cũng ghi nhận sáng tạo nhảy từ vị trí thứ 6 lên vị trí số 1 trong các kỹ năng tăng trưởng nhanh nhất toàn cầu. Nhưng biết "con người vẫn cần thiết" là một chuyện. Chứng minh bản thân mình là một trong những con người đó lại là chuyện khác, và đây chính là lằn ranh giữa tự an ủi và chuẩn bị thực sự.</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="IV. From awareness to a working habit, still taking shape">IV. Từ nhận thức tới một thói quen hành động, vẫn đang thành hình</h4>
+      <p data-en="I don't have a tidy set of action principles yet, and I don't want to force one into existence just to have something to present. What I'm building instead is a habit: before any policy proposal or decision affecting people, I stop and ask who will be affected, whether what I believe is true rests on something measurable or just a plausible-sounding assumption, and what the worst case looks like if I'm wrong. The A.C.T.S. framework below is the structured result of that habit.">Tôi chưa có một bộ nguyên tắc hành động gọn gàng, và tôi không muốn chốt vội chỉ để có thứ trình bày cho xong. Điều tôi đang làm thay vào đó là tập một thói quen: trước mỗi đề xuất chính sách hay quyết định ảnh hưởng đến con người, tôi dừng lại hỏi ai sẽ chịu ảnh hưởng, điều tôi tin có đang dựa trên thứ đo lường được hay chỉ là một giả định nghe hợp lý, và rủi ro tệ nhất nếu mình sai là gì. Framework A.C.T.S. ở phần dưới là kết quả có cấu trúc của thói quen đó.</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="V. What I'd say to other HR professionals">V. Điều tôi muốn nói với những người làm HR khác</h4>
+      <p data-en="I'm not writing this to prove myself right. I believe many HR professionals, especially those newer to the field, carry this same unease without often saying it out loud. The question that matters more than &quot;will AI replace me&quot; is: in the work I do today, which part is a task that could be handed to a machine, and which part is judgment and responsibility that only a human can carry?">Tôi không viết những dòng này để chứng minh mình đúng. Tôi tin nhiều người làm HR, đặc biệt là người mới vào nghề, đang mang chung nỗi bất an này mà ít khi nói ra thành lời. Câu hỏi quan trọng hơn "AI có thay thế tôi không" là: trong công việc mình đang làm hôm nay, phần nào là thao tác có thể giao cho máy, và phần nào là phán đoán, trách nhiệm mà chỉ con người mới gánh vác được?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FRAMEWORK A.C.T.S.: FULL DETAIL
+     ============================================================ -->
+<section id="framework">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-en="Thinking framework">Khung tư duy</div>
+      <h2 data-en="Framework A.C.T.S.: a decision-making framework for HR risk">Framework A.C.T.S.: khung ra quyết định &amp; đánh giá rủi ro nhân sự</h2>
+    </div>
+
+    <div class="memo-section">
+      <p data-en="A personal framework for evaluating risk and making people decisions, developed from eight academic sources (Minto, IIBA/BABOK, Conn &amp; McLean, Ferrar &amp; Green, Bock, Mike West, Appelbaum et al., Kahneman/Sibony/Sunstein, Edmondson). It isn't tied to any one organization or role: it's meant to apply to any HR situation.">Một khung nguyên tắc cá nhân để đánh giá rủi ro và ra quyết định nhân sự, phát triển từ tám nguồn học thuật (Minto, IIBA/BABOK, Conn &amp; McLean, Ferrar &amp; Green, Bock, Mike West, Appelbaum et al., Kahneman/Sibony/Sunstein, Edmondson). Khung không gắn với một tổ chức hay vai trò cụ thể: dùng được cho bất kỳ tình huống nhân sự nào.</p>
+    </div>
+
+    <p class="fw-thesis" data-en="A people decision is only trustworthy once it has passed four independent checks: the right business problem (Alignment), respect for human experience (Concentricity), readiness to execute (Triggers), and measured, risk-controlled impact (Sustainability): and all four checks are only trustworthy if the information behind them is current, accurate, and honestly communicated in both directions.">
+      Một quyết định nhân sự chỉ đáng tin khi đã đi qua đủ 4 phép kiểm tra độc lập: đúng vấn đề kinh doanh (Alignment), tôn trọng trải nghiệm con người (Concentricity), đủ điều kiện thực thi (Triggers), được đo lường và kiểm soát rủi ro (Sustainability): và cả 4 phép kiểm tra đó chỉ đáng tin khi thông tin làm nền cho chúng đủ nhanh, đủ chính xác, và được giao tiếp trung thực hai chiều.
+    </p>
+
+    <div class="acts-tabs" role="tablist" aria-label="4 trụ cột của Framework A.C.T.S.">
+      <button class="acts-tab-btn a active" data-pillar="a" role="tab" aria-selected="true"><span class="tab-letter">A</span>Alignment</button>
+      <button class="acts-tab-btn c" data-pillar="c" role="tab" aria-selected="false"><span class="tab-letter">C</span>Concentricity</button>
+      <button class="acts-tab-btn t" data-pillar="t" role="tab" aria-selected="false"><span class="tab-letter">T</span>Triggers</button>
+      <button class="acts-tab-btn s" data-pillar="s" role="tab" aria-selected="false"><span class="tab-letter">S</span>Sustainability</button>
+    </div>
+
+    <div class="acts-panel active" data-panel="a" role="tabpanel">
+      <p class="principle" data-en="&quot;Before proposing any HR solution, I require myself to clearly identify the specific business problem it solves. Until that's answered, I don't let myself move on to designing a solution.&quot;">"Trước khi đề xuất bất kỳ giải pháp nhân sự nào, tôi bắt buộc mình xác định rõ vấn đề kinh doanh cụ thể mà nó giải quyết. Chưa trả lời rõ được câu hỏi này, tôi chưa cho phép mình đi tiếp sang bước thiết kế giải pháp."</p>
+      <div class="comp-table">
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="A1. Definition (WHAT)">A1. Định nghĩa (WHAT)</div><div class="comp-tool">SCQ (Minto) · BACCM–Need (IIBA)</div></div>
+          <div class="comp-q" data-en="What's the core question leadership actually needs answered?">Câu hỏi cốt lõi Ban Lãnh đạo thực sự cần trả lời là gì?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Listeners ask back &quot;what problem are we actually solving&quot;; the problem gets described differently across meetings.">Người nghe hỏi lại "vấn đề mình đang giải quyết là gì"; vấn đề được mô tả khác nhau giữa các cuộc họp.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="A2. Structure &amp; priority (WHICH)">A2. Cấu trúc &amp; ưu tiên (WHICH)</div><div class="comp-tool">Logic Tree MECE · Complexity–Impact Matrix (Conn &amp; McLean)</div></div>
+          <div class="comp-q" data-en="Which branch of the logic tree is the highest-leverage lever?">Nhánh nào trong cây logic là đòn bẩy tác động lớn nhất?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Can't say which task matters more; can't explain why this comes before that.">Không phân biệt được việc nào quan trọng hơn; không giải thích được vì sao làm việc này trước việc khác.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="A3. Value confirmation (FOR WHOM)">A3. Xác nhận giá trị (FOR WHOM)</div><div class="comp-tool">BACCM–Value/Stakeholder · Vertical fit</div></div>
+          <div class="comp-q" data-en="Does the solution match the organization's highest-level goal?">Giải pháp có khớp mục tiêu cấp cao nhất của tổ chức không?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Leadership asks nothing further after the pitch, or asks outright &quot;how does this relate to this quarter's goal.&quot;">Cấp trên không hỏi thêm gì sau khi trình bày; hoặc hỏi thẳng "liên quan gì đến mục tiêu quý này".</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acts-panel" data-panel="c" role="tabpanel">
+      <p class="principle" data-en="&quot;I don't design policy from operational data alone. Before finalizing any solution, I check it against the real experience of the people it will directly affect.&quot;">"Tôi không thiết kế chính sách chỉ dựa trên dữ liệu vận hành. Trước khi chốt bất kỳ giải pháp nào, tôi đối chiếu lại với trải nghiệm thực tế của người sẽ chịu ảnh hưởng trực tiếp."</p>
+      <div class="comp-table">
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="C1. Listening (Input)">C1. Lắng nghe (Input)</div><div class="comp-tool" data-en="Pulse survey, text analytics (West) · Gallup Q12 · Josh Bersin">Pulse survey, text analytics (West) · Gallup Q12 · Josh Bersin</div></div>
+          <div class="comp-q" data-en="Am I really listening, or inferring from numbers?">Tôi thực sự lắng nghe, hay đang suy diễn từ số liệu?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Low survey response rate; open-text answers keep repeating a theme policy has never addressed.">Tỷ lệ phản hồi khảo sát thấp; câu trả lời định tính lặp lại chủ đề chưa từng được chính sách nhắc đến.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="C2. Experience design (Process)">C2. Thiết kế trải nghiệm (Process)</div><div class="comp-tool" data-en="Employee Journey Mapping (West) · Design Thinking">Employee Journey Mapping (West) · Design Thinking</div></div>
+          <div class="comp-q" data-en="Where's the moment that most deserves extra care?">Đâu là khoảnh khắc quan trọng tôi cần đặc biệt cẩn trọng?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="The same experience is applied to groups with clearly different circumstances.">Trải nghiệm giống hệt nhau cho các nhóm có hoàn cảnh khác biệt rõ rệt.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="C3. Confirming fair exchange (Output)">C3. Xác nhận trao đổi công bằng (Output)</div><div class="comp-tool" data-en="Fair Exchange of Value, Employee of One (Ferrar &amp; Green) · Bock">Fair Exchange of Value, Employee of One (Ferrar &amp; Green) · Bock</div></div>
+          <div class="comp-q" data-en="Does the solution exchange value fairly in both directions?">Giải pháp có trao đổi giá trị công bằng hai chiều không?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="An employee leaves right after benefiting from a company investment.">Nhân viên rời đi ngay sau khi vừa hưởng lợi từ một khoản đầu tư của công ty.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acts-panel" data-panel="t" role="tabpanel">
+      <p class="principle" data-en="&quot;A solution that's theoretically correct can still fail completely in execution. Before I consider a proposal complete, I check three minimum conditions for it to actually run in the real world.&quot;">"Một giải pháp đúng về mặt lý thuyết vẫn có thể thất bại hoàn toàn khi triển khai. Trước khi coi một đề xuất là hoàn chỉnh, tôi kiểm tra đủ 3 điều kiện tối thiểu để nó thực sự chạy được trong thực tế."</p>
+      <div class="comp-table">
+        <div class="comp-row">
+          <div><div class="comp-name">T1. Ability</div><div class="comp-tool" data-en="CAMS–Capability (West) · ADKAR–Knowledge &amp; Ability (Prosci)">CAMS–Capability (West) · ADKAR–Knowledge &amp; Ability (Prosci)</div></div>
+          <div class="comp-q" data-en="Do they have the skill already, or do they need training/hiring?">Có đủ kỹ năng chưa, hay cần đào tạo/tuyển bổ sung?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Asking how to do it more than once; repeating the same mistake despite reminders.">Hỏi lại cách làm nhiều lần; lặp lại cùng một lỗi dù đã được nhắc.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name">T2. Motivation</div><div class="comp-tool" data-en="CAMS–Motivation (West) · ADKAR–Awareness &amp; Desire (Prosci)">CAMS–Motivation (West) · ADKAR–Awareness &amp; Desire (Prosci)</div></div>
+          <div class="comp-q" data-en="Does their personal drive actually connect to this goal?">Sứ mệnh cá nhân của họ có thực sự gắn với mục tiêu này?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Silent when asked for input; does only the bare minimum required.">Im lặng khi được hỏi ý kiến; chỉ làm đúng mức tối thiểu yêu cầu.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name">T3. Opportunity</div><div class="comp-tool" data-en="CAMS–Alignment &amp; Support (West) · RACI · ADKAR–Reinforcement">CAMS–Alignment &amp; Support (West) · RACI · ADKAR–Reinforcement</div></div>
+          <div class="comp-q" data-en="Do they have the tools, support, and clear RACI role?">Họ có đủ công cụ, hỗ trợ, vai trò rõ theo RACI chưa?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="Repeatedly asking who's responsible for what; complaints about missing tools or budget.">Liên tục hỏi lại ai chịu trách nhiệm việc gì; phàn nàn thiếu công cụ/ngân sách.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acts-panel" data-panel="s" role="tabpanel">
+      <p class="principle" data-en="&quot;A people decision isn't finished when it's announced. It's only complete once I've measured real impact, war-gamed the failure scenario, and have a learning plan for the next cycle.&quot;">"Một quyết định nhân sự chưa kết thúc khi được ban hành. Nó chỉ thực sự hoàn chỉnh khi tôi đã đo được tác động thật, thử hình dung trước kịch bản thất bại, và có kế hoạch học hỏi cho chu kỳ tiếp theo."</p>
+      <div class="comp-table">
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="S1. Measuring impact">S1. Đo lường tác động</div><div class="comp-tool" data-en="ROI · ELV / NAV (Ferrar &amp; Green; West)">ROI · ELV / NAV (Ferrar &amp; Green; West)</div></div>
+          <div class="comp-q" data-en="Financial or non-financial, which specific metric measures impact here?">Tài chính hay phi tài chính, chỉ số cụ thể nào đo được tác động ở đây?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="The report only has descriptive figures, no before/after comparison.">Báo cáo chỉ có số liệu mô tả, không có so sánh trước/sau.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="S2. Risk governance">S2. Quản trị rủi ro</div><div class="comp-tool" data-en="Pre-mortem, Ethics Charter (Ferrar &amp; Green) · TRUST-AI framework">Pre-mortem, Ethics Charter (Ferrar &amp; Green) · Khung TRUST-AI</div></div>
+          <div class="comp-q" data-en="If this decision fails, what's the most likely cause?">Nếu quyết định thất bại, nguyên nhân khả dĩ nhất là gì?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="No one can answer &quot;what happens if this is wrong&quot;; results get published the moment they arrive.">Không ai trả lời được "nếu sai thì hậu quả là gì"; công bố ngay khi vừa có kết quả.</span></div>
+        </div>
+        <div class="comp-row">
+          <div><div class="comp-name" data-en="S3. Continuous learning">S3. Học hỏi liên tục</div><div class="comp-tool" data-en="Build–Measure–Learn (Croll &amp; Yoskovitz) · 5 Whys">Build–Measure–Learn (Croll &amp; Yoskovitz) · 5 Whys</div></div>
+          <div class="comp-q" data-en="Is there a way to trace the root cause when results fall short?">Có sẵn cách truy nguyên nhân gốc rễ khi kết quả không đạt chưa?</div>
+          <div class="comp-i"><span class="lbl" data-en="Indicator">Chỉ báo</span><span data-en="This period's report has the exact same structure as last period's, with no noted adjustment.">Báo cáo kỳ này giống hệt cấu trúc kỳ trước, không ghi điều chỉnh gì.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foundation-note">
+      <span><b data-en="I1. Speed">I1. Tốc độ</b> <span data-en="OODA Loop (Boyd)">OODA Loop (Boyd)</span></span>
+      <span><b data-en="I2. Accuracy &amp; bias">I2. Chính xác &amp; không thiên kiến</b> <span data-en="Noise (Kahneman, Sibony &amp; Sunstein)">Noise (Kahneman, Sibony &amp; Sunstein)</span></span>
+      <span><b data-en="I3. Two-way communication">I3. Giao tiếp hai chiều</b> <span data-en="Psychological Safety (Edmondson)">Psychological Safety (Edmondson)</span></span>
+    </div>
+    <p class="note-line" data-en="This &quot;Information &amp; Communication&quot; foundation runs beneath all four pillars. A &quot;pass&quot; on any single pillar is only trustworthy if the data behind it is current, accurate, and has been honestly exchanged in both directions.">Nền tảng "Thông tin &amp; Giao tiếp" ở trên chạy xuyên suốt cả 4 trụ cột. Một câu trả lời "đạt" ở bất kỳ trụ cột nào chỉ đáng tin nếu dữ liệu làm nền cho nó đủ mới, đủ chính xác, và đã được trao đổi trung thực hai chiều.</p>
+
+    <div class="subhead" data-en="Quick reference for all 15 self-check questions">Tra cứu nhanh cho toàn bộ 15 câu hỏi tự vấn</div>
+    <div class="table-wrap">
+      <table class="quickref-table">
+        <thead><tr><th data-en="Component">Thành tố</th><th data-en="Self-check question">Câu hỏi tự vấn</th></tr></thead>
+        <tbody>
+          <tr><td class="pillar-tag" style="color:var(--navy)" data-en="A1. Definition">A1. Định nghĩa</td><td data-en="What's the core question leadership actually needs answered?">Câu hỏi cốt lõi Ban Lãnh đạo thực sự cần trả lời là gì?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--navy)" data-en="A2. Structure &amp; priority">A2. Cấu trúc &amp; ưu tiên</td><td data-en="Which branch of the logic tree is the highest-leverage lever?">Nhánh nào trong cây logic là đòn bẩy tác động lớn nhất?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--navy)" data-en="A3. Value confirmation">A3. Xác nhận giá trị</td><td data-en="Does the solution match the organization's highest-level goal?">Giải pháp có khớp mục tiêu cấp cao nhất của tổ chức không?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--blue)" data-en="C1. Listening">C1. Lắng nghe</td><td data-en="Am I really listening, or inferring from numbers?">Tôi thực sự lắng nghe, hay đang suy diễn từ số liệu?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--blue)" data-en="C2. Experience design">C2. Thiết kế trải nghiệm</td><td data-en="Where's the moment that most deserves extra care?">Đâu là khoảnh khắc quan trọng tôi cần đặc biệt cẩn trọng?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--blue)" data-en="C3. Fair exchange">C3. Trao đổi công bằng</td><td data-en="Does the solution exchange value fairly in both directions?">Giải pháp có trao đổi giá trị công bằng hai chiều không?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--bright)">T1. Ability</td><td data-en="Do they have the skill already, or do they need training/hiring?">Có đủ kỹ năng chưa, hay cần đào tạo/tuyển bổ sung?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--bright)">T2. Motivation</td><td data-en="Does their personal drive actually connect to this goal?">Sứ mệnh cá nhân của họ có thực sự gắn với mục tiêu này?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--bright)">T3. Opportunity</td><td data-en="Do they have the tools, support, and clear RACI role?">Họ có đủ công cụ, hỗ trợ, vai trò rõ theo RACI chưa?</td></tr>
+          <tr><td class="pillar-tag" style="color:#8A8E1B" data-en="S1. Measuring impact">S1. Đo lường tác động</td><td data-en="Financial or non-financial, which specific metric measures impact here?">Tài chính hay phi tài chính, chỉ số cụ thể nào đo được tác động ở đây?</td></tr>
+          <tr><td class="pillar-tag" style="color:#8A8E1B" data-en="S2. Risk governance">S2. Quản trị rủi ro</td><td data-en="If this decision fails, what's the most likely cause?">Nếu quyết định thất bại, nguyên nhân khả dĩ nhất là gì?</td></tr>
+          <tr><td class="pillar-tag" style="color:#8A8E1B" data-en="S3. Continuous learning">S3. Học hỏi liên tục</td><td data-en="Is there a way to trace the root cause when results fall short?">Có sẵn cách truy nguyên nhân gốc rễ khi kết quả không đạt chưa?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--melon)" data-en="I1. Speed">I1. Tốc độ</td><td data-en="Am I deciding on this week's information, or last quarter's?">Tôi đang quyết định dựa trên thông tin tuần này hay quý trước?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--melon)" data-en="I2. Accuracy &amp; bias">I2. Chính xác &amp; không thiên kiến</td><td data-en="Would two different people looking at this data reach the same conclusion?">Hai người khác nhìn cùng dữ liệu này có ra kết luận giống nhau không?</td></tr>
+          <tr><td class="pillar-tag" style="color:var(--melon)" data-en="I3. Two-way communication">I3. Giao tiếp hai chiều</td><td data-en="If there's a bad signal on the front line, would it reach me in time?">Nếu có tín hiệu xấu ở tuyến đầu, nó có đến tai tôi kịp không?</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subhead" data-en="Limits and self-critique">Giới hạn &amp; tự phản biện</div>
+    <div class="limits-box">
+      <p data-en="A framework is only honest if it states both (1) what it can't do, and (2) what it can.">Một framework trung thực cần nói rõ cả (1) điều nó không làm được, và (2) điều nó làm được.</p>
+      <ul>
+        <li data-en="Not suited to decisions that need an immediate response (a crisis, an urgent incident): working through all four pillars takes time an emergency doesn't have.">Không phù hợp cho các quyết định cần phản ứng tức thời (khủng hoảng, sự cố khẩn cấp): đi đủ 4 trụ cột cần thời gian mà một tình huống khẩn cấp không có.</li>
+        <li data-en="Ability, Motivation, and Opportunity are presented as independent for clarity, but in practice they interact: this is a known limitation of the AMO model itself, not something this framework fully resolves.">Ba thành tố Ability, Motivation, Opportunity được trình bày độc lập để dễ phân tích, nhưng thực tế chúng tương tác qua lại: đây là giới hạn đã được chính các nhà nghiên cứu AMO ghi nhận, không phải điều framework này giải quyết triệt để.</li>
+        <li data-en="It's built for preparing and evaluating before a decision: it doesn't replace hands-on experience or judgment in a truly novel situation, which only forms through real friction over time.">Framework thiên về chuẩn bị và đánh giá trước khi quyết định: không thay thế được kinh nghiệm thực chiến hay phán đoán trong tình huống chưa từng gặp.</li>
+        <li data-en="Not every decision needs all four pillars at full depth: for small, low-risk decisions, applying the full framework can cost more time than it's worth. This is an open direction for future refinement.">Không phải mọi quyết định đều cần đi hết cả 4 trụ cột ở cùng mức độ sâu: với quyết định nhỏ, ít rủi ro, áp dụng đầy đủ framework có thể tốn thời gian hơn mức cần thiết. Đây là hướng phát triển tiếp theo.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DECISION MEMO: FULL DETAIL
+     ============================================================ -->
+<section id="memo">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-en="Applied in practice">Ứng dụng thực tế</div>
+      <h2 data-en="Decision Memo: Turnover Analysis &amp; Intervention Proposal">Decision Memo: Phân tích Turnover &amp; Đề xuất Can thiệp</h2>
+    </div>
+
+    <p class="note-line" style="margin-top:-14px; margin-bottom:26px;" data-en="A practice case study built to demonstrate how the A.C.T.S. framework applies end to end. It references public statistical patterns from the IBM HR Analytics Attrition dataset for realism, but the organization, headcount, and narrative below are fictionalized for this portfolio and are not tied to any specific employer.">Một tình huống thực hành để minh chứng cách áp dụng framework A.C.T.S. từ đầu đến cuối. Có tham khảo các phát hiện thống kê công khai trên bộ dữ liệu IBM HR Analytics Attrition để tăng tính thực tế, nhưng tổ chức, quy mô nhân sự, và bối cảnh dưới đây được hư cấu cho mục đích portfolio, không gắn với một công ty cụ thể nào.</p>
+
+    <div class="memo-conclusion">
+      <h4 data-en="Executive summary">Tóm tắt điều hành</h4>
+      <p style="margin-bottom:14px; font-style:italic; color:var(--ink-soft);" data-en="Propose 4 targeted interventions by risk segment rather than one blanket retention policy, because these groups differ clearly in both the level and nature of their turnover risk. A uniform solution would waste resources on groups that don't actually need it.">Đề xuất 4 can thiệp có mục tiêu theo từng phân khúc rủi ro thay vì một chính sách giữ chân chung, vì các nhóm này có mức độ và bản chất rủi ro nghỉ việc khác biệt rõ rệt. Một giải pháp đồng nhất sẽ lãng phí nguồn lực vào những nhóm không thực sự cần.</p>
+      <ul>
+        <li data-en="Overtime limits + time-management training for direct managers: Quick Win.">Giới hạn giờ làm thêm + đào tạo quản lý thời gian cho quản lý trực tiếp: Quick Win.</li>
+        <li data-en="An IDP (Individual Development Plan) + more frequent reviews for junior staff: Quick Win.">Xây lộ trình phát triển (IDP) &amp; tăng tần suất review cho nhân sự Junior: Quick Win.</li>
+        <li data-en="A restructured, staged pay-progression path for the low-income group: Big Bet.">Cơ cấu lại lộ trình tăng lương có cấu trúc cho nhóm thu nhập thấp: Big Bet.</li>
+        <li data-en="A review of stock-option policy / alternative benefits by segment: Big Bet.">Rà soát chính sách stock option / phúc lợi thay thế theo phân khúc: Big Bet.</li>
+      </ul>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="Context">Bối cảnh</h4>
+      <p data-en="A mid-sized organization (~1,470 employees, anonymized) recorded higher-than-expected turnover in a few specific groups. Rather than roll out a blanket retention policy, this analysis used statistical testing to pin down exactly which groups carried the highest risk, and why, before proposing an intervention.">Một tổ chức quy mô vừa (~1.470 nhân sự, đã ẩn danh hóa) ghi nhận tỷ lệ nghỉ việc cao hơn kỳ vọng tại một số nhóm cụ thể. Thay vì ban hành chính sách giữ chân chung, phân tích này dùng kiểm định thống kê để xác định chính xác nhóm nào rủi ro cao nhất và vì sao, trước khi đề xuất can thiệp.</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="Approach">Cách tiếp cận</h4>
+      <p data-en="The four findings below are a starting point, not the conclusion. Before designing an intervention, the analysis checks whether these factors are actually independent. For example, junior level and low income might just be the same phenomenon seen from two angles, and treating them as separate would pour resources into a factor that's really just a consequence of another (details in Part III). The A.C.T.S. framework is then used to move from &quot;what we know&quot; to &quot;what to do&quot;: confirm the right problem (Alignment), design to each segment's real experience (Concentricity), verify the people executing it are actually ready (Triggers), and have a plan to measure impact and guard against risk before rolling out (Sustainability).">Bốn phát hiện trên chỉ là điểm khởi đầu, không phải kết luận cuối. Trước khi thiết kế can thiệp, phân tích kiểm tra xem các yếu tố có thực sự độc lập không. Ví dụ, Junior và thu nhập thấp có thể chỉ là cùng một hiện tượng nhìn từ hai góc, và nếu coi chúng là hai yếu tố tách biệt sẽ đổ nguồn lực vào một yếu tố thực chất chỉ là hệ quả của yếu tố khác (chi tiết ở Phần III). Sau đó, khung A.C.T.S. được dùng để đi từ "biết cái gì" đến "nên làm gì": xác nhận đúng vấn đề (Alignment), thiết kế theo đúng trải nghiệm từng phân khúc (Concentricity), kiểm tra người thực thi có đủ điều kiện không (Triggers), và có kế hoạch đo lường/phòng rủi ro trước khi triển khai (Sustainability).</p>
+    </div>
+
+    <div class="memo-section">
+      <h4 class="mh" data-en="Expected impact">Tác động kỳ vọng</h4>
+      <p data-en="A preliminary estimate suggests the recruiting cost saved outweighs the cost of rolling out all 4 interventions by a wide margin, enough to justify the investment, though the specific figures in Part V are order-of-magnitude illustrations only and should be replaced with real internal data before committing budget.">Ước tính sơ bộ cho thấy chi phí tuyển dụng thay thế tiết kiệm được vượt xa chi phí triển khai 4 can thiệp, đủ để khẳng định hướng đi này đáng đầu tư, dù các con số cụ thể (Phần V) chỉ mang tính minh họa trật tự độ lớn, cần thay bằng dữ liệu nội bộ thật khi áp dụng.</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ===== I. Context, Problem & Method ===== -->
+    <div class="subhead" data-en="I. Context, Problem &amp; Method">I. Bối cảnh, Vấn đề &amp; Phương pháp</div>
+    <p data-en="A mid-sized organization (~1,470 employees) recorded a concerning turnover rate in specific groups, with no clear root cause yet identified. HR was tasked with pinpointing the cause before proposing next quarter's retention budget.">Một tổ chức quy mô vừa (~1.470 nhân sự) ghi nhận tỷ lệ nghỉ việc ở mức đáng lo ngại tại một số nhóm cụ thể, chưa xác định rõ nguyên nhân gốc. HR được giao nhiệm vụ xác định nguyên nhân trước khi đề xuất ngân sách giữ chân nhân tài cho quý tới.</p>
+
+    <div class="scq-grid">
+      <div class="scq-card">
+        <div class="scq-tag">Situation</div>
+        <p data-en="Overall turnover has run above leadership's expectation for the last 2 quarters.">Tỷ lệ nghỉ việc chung đang cao hơn kỳ vọng của Ban Lãnh đạo trong 2 quý gần nhất.</p>
+      </div>
+      <div class="scq-card">
+        <div class="scq-tag">Complication</div>
+        <p data-en="Replacement recruiting costs are rising, and some operating teams are being disrupted by a shortage of experienced staff.">Chi phí tuyển dụng thay thế tăng, một số đội nhóm vận hành bị gián đoạn vì thiếu nhân sự có kinh nghiệm.</p>
+      </div>
+      <div class="scq-card">
+        <div class="scq-tag">Question</div>
+        <p data-en="Which HR policy factors are most linked to turnover, and which groups should get priority with a limited budget?">Đâu là các yếu tố chính sách HR liên quan nhiều nhất đến việc nghỉ việc, và nhóm nhân sự nào cần được ưu tiên can thiệp trước với nguồn lực có hạn?</p>
+      </div>
+    </div>
+
+    <p style="margin-top:18px;" data-en="Method: Exploratory Data Analysis (EDA) and statistical hypothesis testing (Chi-Square Test, Fisher's Exact Test) on categorical HR data. Before testing, &quot;why do people leave&quot; was decomposed into 4 independent hypothesis groups (Compensation, Career, Work–life balance, Workplace relationships), each tied to specific variables. This helps avoid testing every available variable at random, a common pitfall called data dredging that inflates &quot;statistically significant&quot; results through repeated testing. After testing, employees were segmented by risk level and mapped against lifecycle stage (a lifecycle heatmap) to identify the right moment to intervene for each group.">Phương pháp: Exploratory Data Analysis (EDA) và kiểm định giả thuyết thống kê (Chi-Square Test, Fisher's Exact Test) trên dữ liệu nhân sự dạng phân loại (categorical). Trước khi kiểm định, vấn đề "vì sao nhân sự nghỉ việc" được phân rã theo 4 nhóm giả thuyết độc lập (Đãi ngộ, Thăng tiến, Cân bằng công việc-cuộc sống, Quan hệ nơi làm việc), mỗi nhóm gắn với các biến cụ thể trong dữ liệu. Điều này giúp tránh kiểm định ngẫu nhiên toàn bộ biến có sẵn, một lỗi phổ biến gọi là data dredging, dễ cho ra kết quả "có ý nghĩa thống kê" giả do kiểm định quá nhiều lần. Sau kiểm định, nhân sự được phân đoạn theo mức độ rủi ro (segmented insight generation) và đối chiếu theo từng giai đoạn trong vòng đời nhân sự (lifecycle heatmap) để xác định thời điểm can thiệp phù hợp cho từng nhóm.</p>
+
+    <!-- ===== II. Key Findings ===== -->
+    <div class="subhead" data-en="II. Key Findings">II. Phát hiện chính</div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Factor">Yếu tố</th><th data-en="Test method">Phương pháp kiểm định</th><th data-en="Interpretation">Diễn giải</th></tr></thead>
+        <tbody>
+          <tr><td><b>Overtime</b></td><td>Chi-Square / Fisher's Exact Test</td><td data-en="Turnover risk nearly 3x higher than those without overtime.">Rủi ro nghỉ việc cao hơn, xấp xỉ gần gấp 3 lần so với nhóm không làm thêm giờ.</td></tr>
+          <tr><td><b data-en="Junior level">Cấp bậc Junior</b></td><td>Chi-Square / Fisher's Exact Test</td><td data-en="Risk about 2.6x higher than other levels.">Rủi ro nghỉ việc cao hơn khoảng 2.6 lần so với các cấp bậc khác.</td></tr>
+          <tr><td><b data-en="Low income (&lt; 2,696)">Thu nhập thấp (&lt; 2.696)</b></td><td>Chi-Square / Fisher's Exact Test</td><td data-en="Below-median-income group carries about 2.5x higher risk.">Nhóm thu nhập dưới ngưỡng 2.696 có rủi ro cao hơn khoảng 2.5 lần.</td></tr>
+          <tr><td><b data-en="No stock option">Không có stock option</b></td><td>Chi-Square / Fisher's Exact Test</td><td data-en="About 1.7x higher risk than those with stock options, most pronounced among married employees.">Nhân sự không có stock option có rủi ro nghỉ việc cao hơn khoảng 1.7 lần so với nhóm có stock option, đặc biệt rõ rệt ở nhóm đã kết hôn.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:20px;" data-en="Results by hypothesis group. Grouping variables before testing, instead of testing them one by one and grouping afterward, forces a clear hypothesis for each variable before seeing the result, avoiding the trap of only reporting whichever variable &quot;looks&quot; significant.">Kết quả theo từng nhóm giả thuyết. Việc phân nhóm trước khi kiểm định, thay vì kiểm định lẻ tẻ từng biến rồi mới gom nhóm sau, buộc phải có giả thuyết rõ ràng cho từng biến trước khi nhìn kết quả, tránh việc chọn lọc ngược (chỉ báo cáo biến nào "có vẻ" ý nghĩa).</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Hypothesis group">Nhóm giả thuyết</th><th data-en="Variables tested">Biến được kiểm định</th><th data-en="Result">Kết quả</th></tr></thead>
+        <tbody>
+          <tr><td data-en="Compensation">Đãi ngộ (Compensation)</td><td>MonthlyIncome, StockOptionLevel, PercentSalaryHike</td><td data-en="All 3 variables show a signal, the strongest of the 4 groups.">Cả 3 biến đều có tín hiệu, nhóm giả thuyết mạnh nhất trong 4 nhóm.</td></tr>
+          <tr><td data-en="Career">Thăng tiến (Career)</td><td>JobLevel, YearsSinceLastPromotion, TrainingTimesLastYear</td><td data-en="JobLevel shows the clearest signal; the other two are weaker and need more data to conclude.">JobLevel có tín hiệu rõ nhất; 2 biến còn lại yếu hơn, cần thêm dữ liệu để kết luận.</td></tr>
+          <tr><td data-en="Work–life balance">Cân bằng công việc–cuộc sống</td><td>OverTime, DistanceFromHome, YearsAtCompany</td><td data-en="OverTime shows the strongest signal across all 4 hypothesis groups.">OverTime có tín hiệu mạnh nhất trong toàn bộ 4 nhóm giả thuyết.</td></tr>
+          <tr><td data-en="Workplace relationships">Quan hệ nơi làm việc (Relationship)</td><td>RelationshipSatisfaction, EnvironmentSatisfaction, JobSatisfaction</td><td data-en="No variable reached a clear significance threshold in this round.">Không biến nào đạt ngưỡng ý nghĩa thống kê rõ ràng trong lần phân tích này.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-line" data-en="3 of 4 groups have at least one variable reaching significance. The Workplace Relationships group didn't. That doesn't mean it's unimportant, only that there isn't yet enough evidence to prioritize budget there at this stage.">3/4 nhóm có ít nhất một biến đạt ngưỡng ý nghĩa thống kê. Nhóm Quan hệ nơi làm việc không đạt. Điều đó không có nghĩa là không quan trọng, mà là chưa đủ bằng chứng để ưu tiên ngân sách cho nhóm này ở giai đoạn hiện tại.</p>
+
+    <!-- ===== III. Verification before acting ===== -->
+    <div class="subhead" data-en="III. Verification Before Acting">III. Kiểm chứng trước khi hành động</div>
+    <p data-en="The four factors in Part II are presented independently, but analytically they may not be independent at all. This check is mandatory before designing an intervention: skipping it risks targeting the wrong group, or spending budget on a factor that's really just a mediator of another.">Bốn yếu tố ở Phần II được trình bày độc lập, nhưng về mặt logic phân tích, chúng có khả năng không hề độc lập với nhau. Đây là bước bắt buộc phải làm trước khi thiết kế can thiệp: bỏ qua bước này có nguy cơ nhắm sai đối tượng, hoặc đổ ngân sách vào một yếu tố thực chất chỉ là biến trung gian (mediator) của một yếu tố khác.</p>
+
+    <p style="margin-top:16px; font-weight:700;" data-en="Confound #1: Are Junior level and low income really two independent factors?">Nghi vấn nhiễu #1: Junior và Thu nhập thấp có thực sự là hai yếu tố độc lập?</p>
+    <p data-en="Junior employees almost certainly skew toward lower income due to the level-based pay scale. If so, &quot;low income&quot; and &quot;Junior&quot; likely aren't two independent levers. Low income may partly just be a consequence of still being Junior, so two paths need to be separated before acting.">Nhân sự cấp Junior gần như chắc chắn có xu hướng thu nhập thấp hơn do thang lương theo cấp bậc. Nếu đúng vậy, "thu nhập thấp" và "Junior" rất có thể không phải hai đòn bẩy độc lập, mà thu nhập thấp một phần là hệ quả của việc còn ở cấp Junior. Cần tách hai đường trước khi hành động.</p>
+    <ul class="tl-bullets" style="margin-top:10px;">
+      <li data-en="Path A, low income but no longer Junior: this is closer to &quot;hasn't been raised despite enough tenure,&quot; a real compensation issue worth a pay-progression intervention.">Đường A, thu nhập thấp nhưng không còn là Junior: đây gần với "chưa được tăng lương dù đã đủ lâu năm", một vấn đề đãi ngộ thật, xứng đáng can thiệp bằng lộ trình lương.</li>
+      <li data-en="Path B, low income because still Junior: this is a development-speed issue, not a compensation issue, so the right fix is shortening time-to-promotion rather than raising pay while still Junior.">Đường B, thu nhập thấp vì đang là Junior: đây là vấn đề tốc độ phát triển, không phải đãi ngộ, nên can thiệp đúng là rút ngắn thời gian lên cấp, không phải tăng lương ngay khi còn Junior.</li>
+    </ul>
+    <p class="note-line" data-en="Both paths sit under &quot;low income&quot; but need two different interventions: lumping them together dilutes the budget.">Hai đường này tuy cùng nằm trong nhóm "thu nhập thấp" nhưng cần hai loại can thiệp khác nhau: gộp chung sẽ khiến ngân sách bị pha loãng.</p>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Confound #2: Are Overtime and Junior level measuring the same thing?">Nghi vấn nhiễu #2: Overtime và Junior có đang đo cùng một hiện tượng?</p>
+    <p data-en="Junior staff are typically assigned more execution-heavy, operational work, likely also the group doing the most overtime. If so, &quot;overtime&quot; and &quot;Junior&quot; may just be two angles on the same root cause (workload distributed unevenly by level), not two separate levers. Consequence: capping overtime hours without also reviewing how workload is distributed by level may fail to address the root cause.">Nhân sự Junior thường được giao nhiều việc mang tính thực thi/vận hành hơn, đây cũng là nhóm có khả năng cao là nhóm làm overtime nhiều nhất. Nếu đúng, "overtime" và "Junior" có thể chỉ là hai góc nhìn khác nhau của cùng một nguyên nhân gốc (khối lượng công việc phân bổ không đều theo cấp bậc), chứ không phải hai đòn bẩy tách biệt. Hệ quả: giới hạn giờ overtime mà không đi kèm rà soát phân bổ khối lượng công việc theo cấp bậc có thể không giải quyết được gốc rễ.</p>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Causality check: is this factor a cause, or a symptom of people who've already checked out?">Nghi vấn nhân quả: yếu tố này là nguyên nhân, hay là hệ quả của việc đã có ý định nghỉ?</p>
+    <p data-en="For overtime specifically, the forward direction (overload → burnout → resignation) is plausible, but there's a reverse path worth weighing. Employees who've already decided to leave often disengage and avoid work, pushing more overtime onto the colleagues who remain. In other words, the overtime of people who STAY may rise because others have already &quot;checked out&quot; mentally without formally resigning yet. This suggests measuring the overtime of people who have already left in the past, rather than only the team's average. Otherwise there's a risk of intervening on the symptom of people about to leave who stayed, rather than the cause of people who already left.">Với overtime cụ thể, chiều nhân quả thuận (quá tải → kiệt sức → nghỉ việc) là hợp lý, nhưng có một chiều ngược cần cân nhắc. Nhân sự đã có ý định nghỉ thường giảm cam kết, né việc, khiến đồng nghiệp còn lại phải gánh thêm overtime để bù. Nói cách khác, overtime của người Ở LẠI có thể tăng lên vì người khác đã "rời tâm trí" dù chưa nghỉ việc chính thức. Điều này gợi ý nên đo overtime của chính người đã nghỉ việc trong quá khứ, thay vì chỉ đo overtime trung bình của toàn đội. Nếu không, có nguy cơ can thiệp nhầm vào triệu chứng của người sắp nghỉ ở lại, thay vì nguyên nhân khiến người khác đã nghỉ.</p>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Compounding risk segments">Phân khúc rủi ro cộng dồn (compounding risk)</p>
+    <p data-en="If an employee falls into more than one of the 4 risk groups at once (say, Junior, high overtime, and low income), their turnover risk isn't simply &quot;the highest of the groups.&quot; It's more likely multiplied, since several different root causes are acting on the same person at once. This group, even if it's a small share of total headcount, deserves priority #1, above any single group in Part II.">Nếu một nhân sự cùng lúc rơi vào nhiều hơn một trong 4 nhóm rủi ro (ví dụ vừa Junior, vừa overtime cao, vừa thu nhập thấp), thì về logic, rủi ro nghỉ việc của người này không đơn thuần "cao nhất trong các nhóm". Nhiều khả năng đây là rủi ro nhân lên, vì nhiều nguyên nhân gốc khác nhau đang tác động cùng lúc lên cùng một người. Nhóm này, dù có thể chỉ chiếm một tỷ lệ nhỏ trong tổng số nhân sự, xứng đáng là đối tượng ưu tiên số 1, cao hơn bất kỳ nhóm đơn lẻ nào ở Phần II.</p>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Overlapping risk factors">Số yếu tố rủi ro trùng nhau</th><th data-en="Meaning">Ý nghĩa</th><th data-en="Intervention priority">Mức ưu tiên can thiệp</th></tr></thead>
+        <tbody>
+          <tr><td data-en="0–1 factor">0-1 yếu tố</td><td data-en="Baseline risk: the organization's normal level">Rủi ro nền: mức thông thường của tổ chức</td><td data-en="No special intervention, routine monitoring">Không cần can thiệp đặc biệt, theo dõi định kỳ</td></tr>
+          <tr><td data-en="2 factors">2 yếu tố</td><td data-en="Compounding risk: two root causes acting together">Rủi ro cộng dồn: hai nguyên nhân gốc cùng tác động</td><td data-en="Add to watch list, medium priority">Đưa vào diện theo dõi, ưu tiên trung bình</td></tr>
+          <tr><td data-en="3–4 factors">3-4 yếu tố</td><td data-en="Multiplied risk: several root causes at once, highest near-term resignation likelihood">Rủi ro nhân lên: nhiều nguyên nhân gốc cùng lúc, khả năng cao nhất sẽ nghỉ trong ngắn hạn</td><td data-en="Highest intervention priority, handled before single-factor groups">Ưu tiên can thiệp cao nhất, xử lý trước cả khi các nhóm đơn lẻ được xử lý xong</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-line" data-en="Addendum for Part V: before splitting budget evenly across the 4 individual interventions, build a simple risk score (count of risk factors an employee currently has, 0–4 scale), and prioritize resources for risk score ≥ 3 first. This is usually a small group with the highest resignation probability and the best return per budget dollar.">Đề xuất bổ sung cho Phần V: trước khi chia đều ngân sách cho 4 can thiệp riêng lẻ, dựng một chỉ số rủi ro đơn giản (risk score = tổng số yếu tố mà một nhân sự đang có, thang 0-4), rồi ưu tiên nguồn lực cho nhóm risk score ≥ 3 trước. Đây thường là nhóm nhỏ nhưng có xác suất nghỉ việc cao nhất và mang lại hiệu quả trên mỗi đồng ngân sách tốt nhất.</p>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Is the data reliable enough to act on?">Dữ liệu có đủ tin cậy để hành động chưa?</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Question">Câu hỏi</th><th data-en="Applied to this case">Áp dụng vào tình huống này</th><th data-en="How it's handled">Cách xử lý</th></tr></thead>
+        <tbody>
+          <tr><td data-en="I1. Speed: OODA Loop (Boyd)">I1. Tốc độ: OODA Loop (Boyd)</td><td data-en="Is the attrition, income, and level data still current, or too far removed from the decision point?">Dữ liệu attrition, thu nhập, cấp bậc dùng trong phân tích có còn mới không, hay đã cách thời điểm ra quyết định quá xa?</td><td data-en="Refresh the data extract quarterly; don't use last year's figures to decide this year's budget.">Cập nhật lại trích xuất dữ liệu theo quý, không dùng số liệu năm trước để quyết định ngân sách năm nay.</td></tr>
+          <tr><td data-en="I2. Accuracy &amp; bias: Noise (Kahneman, Sibony &amp; Sunstein)">I2. Chính xác &amp; không thiên kiến: Noise (Kahneman, Sibony &amp; Sunstein)</td><td data-en="Do the Part II findings hold up under cross-checking, or are they only correct because the right variables happened to be chosen?">Các phát hiện ở Phần II có nhất quán khi kiểm tra chéo không, hay chỉ đúng vì đã vô tình chọn đúng biến để nhìn?</td><td data-en="This is exactly why the confound checks above (Junior/income, Overtime/Junior) were run before designing the intervention.">Đây chính là lý do các nghi vấn nhiễu ở trên (Junior/thu nhập, Overtime/Junior) được kiểm tra trước khi thiết kế can thiệp.</td></tr>
+          <tr><td data-en="I3. Two-way communication: Psychological Safety (Edmondson)">I3. Giao tiếp hai chiều: Psychological Safety (Edmondson)</td><td data-en="Do employees in qualitative interviews (C1) feel safe enough to give the real reason, or just a politically safe answer?">Nhân sự tham gia phỏng vấn định tính (C1) có đủ an toàn tâm lý để nói lý do thật, hay chỉ đưa câu trả lời an toàn về mặt chính trị nội bộ?</td><td data-en="Interviews are run by a neutral party (not the interviewee's direct manager), with anonymized responses.">Phỏng vấn do một bên trung lập (không phải quản lý trực tiếp của người được hỏi) thực hiện, đảm bảo ẩn danh câu trả lời.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===== IV. From data to solution ===== -->
+    <div class="subhead" data-en="IV. From Data to Solution">IV. Từ dữ liệu đến giải pháp</div>
+    <p data-en="The findings and checks above are only input. The three questions below turn them into a concrete solution: is it worth doing and for whom, how should it be designed around the people affected, and can it actually be executed.">Phát hiện và kiểm chứng ở trên chỉ là input. Ba câu hỏi dưới đây chuyển hóa chúng thành một giải pháp cụ thể: có đáng làm không và cho ai, thiết kế đúng trải nghiệm người bị ảnh hưởng thế nào, và có thực thi được trong thực tế không.</p>
+
+    <p style="margin-top:20px; font-weight:700;" data-en="The right problem, the right priority">Đúng vấn đề, đúng ưu tiên</p>
+    <p data-en="Applying BACCM–Value/Stakeholder (IIBA), the value of solving this problem isn't the same across stakeholders, so how the proposal is framed needs to differ too:">Áp dụng BACCM–Value/Stakeholder (IIBA), giá trị của việc giải quyết vấn đề này không giống nhau giữa các bên liên quan, nên cách trình bày đề xuất cũng cần khác nhau:</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Stakeholder">Bên liên quan</th><th data-en="What they actually care about">Điều họ thực sự quan tâm</th><th data-en="How to frame it">Cách trình bày phù hợp</th></tr></thead>
+        <tbody>
+          <tr><td data-en="Leadership">Ban Lãnh đạo</td><td data-en="Lower operating cost, control of the quarterly HR budget">Giảm chi phí vận hành, kiểm soát ngân sách nhân sự trong quý</td><td data-en="Frame in ROI and a conservative scenario, not internal HR metrics that are hard to benchmark">Trình bày bằng ROI và kịch bản thận trọng, thay cho số HR nội bộ khó đối chiếu</td></tr>
+          <tr><td data-en="Direct managers">Quản lý trực tiếp</td><td data-en="Team stability, less time and effort spent on replacement hiring">Giữ ổn định đội ngũ, giảm thời gian và công sức tuyển dụng thay thế</td><td data-en="Give them concrete tools (RACI, a fast-track process), not just an added KPI">Trao công cụ cụ thể (RACI, quy trình fast-track) thay vì chỉ giao thêm KPI</td></tr>
+          <tr><td data-en="Employees in the 4 risk segments">Nhân sự thuộc 4 phân khúc rủi ro</td><td data-en="Feeling heard and treated fairly, beyond just being a measured object">Cảm thấy được lắng nghe và đối xử công bằng, không đơn thuần là đối tượng bị đo lường</td><td data-en="Make sure the qualitative interview loop closes with feedback, not just questions followed by silence">Đảm bảo vòng phỏng vấn định tính có phản hồi ngược lại, không hỏi rồi im lặng</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-line" data-en="Vertical fit check: the goal of reducing turnover matches the organization's quarterly cost-control goal. This is the final &quot;go/no-go&quot; test before investing time in the two detailed design steps that follow.">Kiểm tra vertical fit: mục tiêu giảm turnover khớp với mục tiêu kiểm soát chi phí nhân sự của tổ chức trong quý. Đây là phép thử "go/no-go" cuối cùng trước khi đầu tư thời gian thiết kế chi tiết ở hai bước tiếp theo.</p>
+
+    <p style="margin-top:26px; font-weight:700;" data-en="Understand the people before designing for them">Hiểu người trong cuộc trước khi thiết kế</p>
+    <p data-en="Quantitative data only shows &quot;what&quot; correlates with resignation, not &quot;why.&quot; Before designing a solution, a qualitative interview round with employees in the 4 high-risk groups is needed, proposed at 5–8 people per segment (enough to start seeing repeated themes under the saturation principle in qualitative research, without needing dozens of interviews), run by a neutral party and synthesized through thematic coding rather than scattered quotes. Interview questions follow the Gallup Q12 and Josh Bersin factor groups (trust, fairness, belonging, growth opportunity, recognition, team relationships), so answers can be checked against a standardized frame.">Số liệu định lượng chỉ cho biết "cái gì" tương quan với nghỉ việc, không cho biết "vì sao". Trước khi thiết kế giải pháp, cần một vòng phỏng vấn định tính với nhân sự thuộc 4 nhóm rủi ro cao, quy mô đề xuất 5-8 người/phân khúc (đủ để bắt đầu thấy chủ đề lặp lại theo nguyên tắc bão hòa dữ liệu trong nghiên cứu định tính, chưa cần đến hàng chục phỏng vấn), do một bên trung lập thực hiện và tổng hợp theo phương pháp phân nhóm chủ đề (thematic coding) thay vì trích dẫn rời rạc. Câu hỏi phỏng vấn bám theo các nhóm yếu tố của Gallup Q12 và Josh Bersin (tin tưởng, công bằng, cảm giác thuộc về, cơ hội phát triển, sự ghi nhận, quan hệ đồng đội), để câu trả lời thu được có thể đối chiếu lại với một khung chuẩn hóa.</p>
+    <ul class="tl-bullets" style="margin-top:10px;">
+      <li data-en="What, if anything, has made you consider leaving in the past 6 months?">Điều gì khiến anh/chị cân nhắc rời đi trong 6 tháng qua, nếu có?</li>
+      <li data-en="If there's one thing the organization could change right now, what would it be?">Nếu có một điều tổ chức có thể thay đổi ngay bây giờ, đó sẽ là gì?</li>
+      <li data-en="Do you feel your contribution is recognized proportionately?">Anh/chị cảm thấy đóng góp của mình có được ghi nhận tương xứng không?</li>
+      <li data-en="Compared with your expectations when you joined, what's most different from reality today?">So với kỳ vọng khi mới gia nhập, điều gì khác nhiều nhất so với thực tế hiện tại?</li>
+    </ul>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Designing the experience by segment">Thiết kế trải nghiệm theo từng phân khúc</p>
+    <p data-en="The 4 risk segments need 4 different intervention journeys, not one shared policy for all. Design is based on Employee Journey Mapping to pinpoint each segment's key moments, and rollout follows a Design Thinking spirit: pilot in the 1–2 departments with the highest risk rate first, measure reaction over 4–6 weeks, then decide on wider rollout. This is deliberately different from designing once and applying it org-wide immediately.">Bốn phân khúc rủi ro cần bốn hành trình can thiệp khác nhau, không dùng chung một chính sách cho tất cả. Thiết kế dựa trên Employee Journey Mapping để xác định đúng khoảnh khắc quan trọng của từng phân khúc, và triển khai theo tinh thần Design Thinking: thử nghiệm ở 1-2 phòng ban có tỷ lệ rủi ro cao nhất trước, đo phản ứng trong 4-6 tuần, rồi mới quyết định nhân rộng. Cách làm này cố tình khác với việc thiết kế một lần rồi áp dụng đại trà toàn tổ chức ngay.</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Segment">Phân khúc</th><th data-en="Root-cause hypothesis">Giả thuyết nguyên nhân gốc</th><th data-en="Intervention direction">Hướng can thiệp</th><th data-en="Tracking indicator">Chỉ báo theo dõi</th></tr></thead>
+        <tbody>
+          <tr><td data-en="High overtime">Overtime cao</td><td data-en="Overloaded, no time to recover">Đang quá tải, không có thời gian phục hồi</td><td data-en="Review staffing levels, cap overtime hours, time-management training for direct managers">Rà soát định biên, giới hạn giờ làm thêm, đào tạo quản lý thời gian cho quản lý trực tiếp</td><td data-en="Reduction in average overtime hours/person/month">Giảm số giờ overtime trung bình/người/tháng</td></tr>
+          <tr><td>Junior</td><td data-en="No clear growth path visible, easy to compare against the external market">Không thấy rõ lộ trình phát triển, dễ so sánh với thị trường bên ngoài</td><td data-en="Clear IDP, more frequent reviews (quarterly instead of annual), assigned mentor">IDP rõ ràng, review tần suất cao hơn (mỗi quý thay vì mỗi năm), gán mentor</td><td data-en="Share of Junior staff with an active IDP">Tỷ lệ junior có IDP đang hoạt động</td></tr>
+          <tr><td data-en="Low income">Thu nhập thấp</td><td data-en="Feels contribution isn't proportionately recognized">Cảm thấy đóng góp không được ghi nhận tương xứng</td><td data-en="Structured pay-progression path tied to specific review milestones, transparent criteria">Lộ trình tăng lương có cấu trúc, gắn với mốc đánh giá cụ thể, minh bạch tiêu chí</td><td data-en="Share of this group with a clear pay-progression path">Tỷ lệ nhân sự nhóm này có lộ trình lương rõ ràng</td></tr>
+          <tr><td data-en="No stock option (married)">Không có stock option (đã kết hôn)</td><td data-en="Prioritizes short-term financial stability over long-term value">Ưu tiên ổn định tài chính ngắn hạn hơn giá trị dài hạn</td><td data-en="Re-evaluate: may need alternative short-term benefits rather than simply increasing stock options">Đánh giá lại: có thể cần phúc lợi ngắn hạn thay thế thay vì chỉ tăng stock option</td><td data-en="Survey on how well the adjusted benefit fits">Khảo sát mức độ phù hợp của phúc lợi sau điều chỉnh</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Confirming a fair exchange">Xác nhận trao đổi công bằng</p>
+    <p data-en="This is the output-check step. Once the 4 intervention directions above are designed, this step checks whether each one is genuinely a two-way exchange of value (Fair Exchange of Value, Ferrar &amp; Green), or only optimizes the organization's interest. For each intervention, the question isn't &quot;what does the organization gain,&quot; but &quot;what does the employee contribute or give up, and is what they get back proportionate, seen from their side, not the organization's.&quot;">Đây là bước output-check. Sau khi đã thiết kế xong 4 hướng can thiệp ở trên, bước này kiểm tra lại từng can thiệp có thực sự là một trao đổi giá trị hai chiều (Fair Exchange of Value, Ferrar &amp; Green) hay chỉ tối ưu lợi ích tổ chức. Với mỗi can thiệp, câu hỏi không phải "tổ chức được gì" mà là "nhân viên đóng góp/hy sinh gì, và điều họ nhận lại có tương xứng không, nhìn từ góc của họ, không phải góc của tổ chức".</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Intervention">Can thiệp</th><th data-en="Employee gives up">Nhân viên đóng góp / hy sinh</th><th data-en="Organization gives back">Tổ chức đáp lại</th><th data-en="Imbalance risk">Rủi ro mất cân bằng</th></tr></thead>
+        <tbody>
+          <tr><td data-en="Overtime cap">Giới hạn overtime</td><td data-en="May lose part of their income if overtime is currently paid">Có thể mất một phần thu nhập nếu overtime hiện đang được trả lương</td><td data-en="Recovery time, less burnout, long-term health">Thời gian phục hồi, giảm kiệt sức, sức khỏe dài hạn</td><td data-en="If overtime is a meaningful income source for this group, capping hours without compensating income is taking value away, not adding it. Survey actual income first.">Nếu overtime là nguồn thu nhập quan trọng với nhóm này, giới hạn giờ mà không bù đắp thu nhập là lấy đi giá trị chứ không phải trao thêm. Cần khảo sát thu nhập thực tế trước khi áp dụng.</td></tr>
+          <tr><td data-en="IDP for Junior staff">IDP cho Junior</td><td data-en="Time spent on training and reviews">Thời gian tham gia đào tạo, review</td><td data-en="New skills, clearer growth opportunity">Kỹ năng mới, cơ hội phát triển rõ ràng hơn</td><td data-en="Training raises a junior employee's market value. Without a real reason to stay (a genuine promotion path with real commitment, not merely promises), they may use the new skill to find work elsewhere.">Đào tạo làm tăng giá trị thị trường của nhân sự junior. Nếu không đi kèm lý do ở lại (lộ trình thăng tiến thật, có cam kết cụ thể, không đơn thuần là hứa hẹn), rủi ro là họ dùng chính kỹ năng mới để tìm việc nơi khác.</td></tr>
+          <tr><td data-en="Pay-progression path">Lộ trình tăng lương</td><td data-en="No direct sacrifice">Không có hy sinh trực tiếp</td><td data-en="Higher income, transparent criteria">Thu nhập tăng, tiêu chí minh bạch</td><td data-en="If the path is just a promise with no concrete milestones, employees may feel led on to wait without actually receiving anything.">Nếu tiêu chí lộ trình chỉ là hứa hẹn không có mốc cụ thể, nhân sự cảm thấy bị dẫn dụ chờ đợi mà không nhận được gì thật.</td></tr>
+          <tr><td data-en="Benefits / stock option review">Rà soát phúc lợi/stock option</td><td data-en="No direct sacrifice">Không có hy sinh trực tiếp</td><td data-en="Benefits better matched to real needs">Phúc lợi phù hợp hơn với nhu cầu thực tế</td><td data-en="If it only changes the form of the benefit without truly increasing its value, employees may perceive it as a cosmetic change, not a substantive one.">Nếu chỉ đổi hình thức phúc lợi mà không thực sự tăng giá trị, nhân sự có thể cảm nhận đây là thay đổi hình thức chứ không phải nội dung.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="risk-callout">
+      <div class="rc-tag" data-en="Watch closely">Chỉ báo cần theo dõi sát</div>
+      <p data-en="If a Junior employee resigns within 3–6 months of completing their IDP, that's a textbook sign of an unbalanced exchange: the organization invested in training but didn't create enough reason to stay, and inadvertently raised the market value of someone about to leave. This metric should be added to Part VI's tracking, kept separate from the Junior group's overall turnover rate.">Nếu nhân sự Junior nghỉ việc trong vòng 3-6 tháng sau khi hoàn thành IDP, đây là dấu hiệu kinh điển của trao đổi mất cân bằng: tổ chức đã đầu tư đào tạo nhưng không tạo đủ lý do để họ ở lại, và vô tình làm tăng giá trị thị trường của chính người sắp rời đi. Chỉ số này cần được thêm vào theo dõi ở Phần VI, tách riêng khỏi tỷ lệ nghỉ việc chung của nhóm Junior.</p>
+    </div>
+    <p data-en="Checked against Bock's trust, freedom, and meaning principle: the overtime cap needs particular care in how it's communicated, since it could be perceived as reduced autonomy (not being allowed to opt into overtime) rather than being cared for. How this intervention is communicated matters as much as the policy itself. In the spirit of Employee of One (Ferrar &amp; Green), the pay-progression path for the low-income group also shouldn't be a one-size formula. A young, single employee's circumstances differ from someone who's their family's main earner, even within the same income threshold.">Đối chiếu với nguyên tắc tin tưởng, tự do, và ý nghĩa của Bock: can thiệp giới hạn overtime cần đặc biệt cẩn trọng, vì nó có thể bị cảm nhận là giảm quyền tự chủ (không được chọn làm thêm khi muốn) thay vì được quan tâm. Cách truyền thông can thiệp này quan trọng không kém bản thân chính sách. Theo tinh thần Employee of One (Ferrar &amp; Green), lộ trình tăng lương cho nhóm thu nhập thấp cũng không nên là một công thức áp chung. Hoàn cảnh một nhân sự trẻ độc thân khác với một nhân sự là trụ cột kinh tế gia đình, dù cùng nằm trong ngưỡng thu nhập thấp.</p>
+
+    <p style="margin-top:26px; font-weight:700;" data-en="Making sure it's executable">Đảm bảo có thể thực thi</p>
+    <p data-en="A solution that's correct about the cause can still fail if the people executing it (here, direct managers) lack one of 3 conditions, ability, motivation, or opportunity/environment (the AMO model):">Một giải pháp đúng về nguyên nhân vẫn có thể thất bại nếu người thực thi (ở đây là quản lý trực tiếp) không đủ 3 điều kiện, năng lực, động lực, hoặc cơ hội/điều kiện môi trường (mô hình AMO):</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th data-en="Check question">Câu hỏi kiểm tra</th><th data-en="Current state">Đánh giá hiện trạng</th><th data-en="Action to prepare">Hành động cần chuẩn bị</th></tr></thead>
+        <tbody>
+          <tr><td>Ability</td><td data-en="Do direct managers have the skill to hold a retention conversation?">Quản lý trực tiếp có kỹ năng thực hiện retention conversation không?</td><td data-en="Most have never been formally trained for this kind of conversation">Phần lớn chưa từng được đào tạo bài bản cho loại hội thoại này</td><td data-en="A short (half-day) workshop for direct managers before rollout">Đào tạo ngắn (half-day workshop) cho quản lý trực tiếp trước khi triển khai</td></tr>
+          <tr><td>Motivation</td><td data-en="Do direct managers actually prioritize this?">Quản lý trực tiếp có ưu tiên việc này không?</td><td data-en="Currently evaluated on short-term operational KPIs: retention isn't in their current KPI set">Đang bị đánh giá theo KPI vận hành ngắn hạn: retention không nằm trong KPI hiện tại</td><td data-en="Consider adding one retention metric to direct managers' quarterly KPIs">Cân nhắc đưa 1 chỉ số retention vào KPI quý của quản lý trực tiếp</td></tr>
+          <tr><td>Opportunity</td><td data-en="Do they have enough authority/budget to act in time?">Có đủ thẩm quyền/ngân sách để hành động kịp thời không?</td><td data-en="Pay/bonus proposals currently go through 3 approval layers, averaging 3–4 weeks">Đề xuất tăng lương/thưởng hiện qua 3 lớp phê duyệt, mất trung bình 3-4 tuần</td><td data-en="Set up a fast-track approval process for cases in the 4 risk segments">Thiết lập quy trình phê duyệt nhanh (fast-track) cho các case thuộc 4 phân khúc rủi ro</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;" data-en="The Opportunity/environment condition specifically needs a clear RACI before rollout, to avoid a situation where no one is sure they have the authority to act, a common reason cross-functional initiatives stall midway:">Riêng điều kiện cơ hội/môi trường cần làm rõ bằng RACI trước khi triển khai, để tránh tình trạng không ai chắc mình có thẩm quyền hành động hay không, nguyên nhân phổ biến khiến các sáng kiến liên phòng ban bị đình trệ giữa chừng:</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Intervention">Can thiệp</th><th>Responsible</th><th>Accountable</th><th>Consulted</th><th>Informed</th></tr></thead>
+        <tbody>
+          <tr><td data-en="1. Overtime cap + training">1. Giới hạn overtime + đào tạo</td><td data-en="Direct manager">Quản lý trực tiếp</td><td>HRBP</td><td data-en="Leadership*">Ban Lãnh đạo*</td><td data-en="Employees involved">Nhân sự liên quan</td></tr>
+          <tr><td data-en="2. IDP for Junior staff">2. IDP cho Junior</td><td data-en="Direct manager">Quản lý trực tiếp</td><td>HRBP</td><td data-en="L&amp;D team">Bộ phận L&amp;D</td><td data-en="Junior staff">Nhân sự Junior</td></tr>
+          <tr><td data-en="3. Pay-progression path">3. Lộ trình tăng lương</td><td>HRBP</td><td data-en="HR Director">Giám đốc Nhân sự</td><td data-en="Finance, Leadership">Tài chính, Ban Lãnh đạo</td><td data-en="Direct managers">Quản lý trực tiếp</td></tr>
+          <tr><td data-en="4. Benefits / stock option review">4. Rà soát phúc lợi/stock option</td><td>HRBP</td><td data-en="HR Director">Giám đốc Nhân sự</td><td data-en="Legal, Finance">Pháp lý, Tài chính</td><td data-en="All employees">Toàn bộ nhân sự</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-line" data-en="* Leadership is only Consulted when a case exceeds the budget threshold pre-set for direct managers; in-threshold cases are handled directly without waiting for case-by-case approval.">* Ban Lãnh đạo chỉ cần tham vấn (Consulted) khi case vượt khung ngân sách quy định sẵn cho quản lý trực tiếp; các case trong khung được xử lý trực tiếp, không cần chờ phê duyệt từng trường hợp.</p>
+
+    <!-- ===== V. Proposal & rollout plan ===== -->
+    <div class="subhead" data-en="V. Proposal &amp; Rollout Plan">V. Đề xuất &amp; Kế hoạch triển khai</div>
+    <p data-en="The compounding-risk group from Part III (risk score ≥ 3) sits outside the priority matrix for the 4 single-segment interventions. It isn't a separate intervention, but a cross-cutting prioritization layer, meaning within each intervention below, employees with risk score ≥ 3 should be handled first.">Nhóm rủi ro cộng dồn ở Phần III (risk score ≥ 3) đứng ngoài ma trận ưu tiên hóa 4 can thiệp theo phân khúc đơn lẻ. Đây không phải một can thiệp riêng, mà là một lớp ưu tiên hóa đối tượng cắt ngang cả 4 can thiệp, nghĩa là trong mỗi can thiệp dưới đây, nhân sự thuộc nhóm risk score ≥ 3 cần được xử lý trước.</p>
+
+    <p style="margin-top:20px; font-weight:700;" data-en="Expected impact">Tác động kỳ vọng</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Factor">Yếu tố</th><th data-en="Interpretation">Diễn giải</th></tr></thead>
+        <tbody>
+          <tr><td data-en="Headcount">Quy mô nhân sự</td><td data-en="~1,470 people, of whom those in 1 of the 4 high-risk segments make up a meaningful share of annual resignations">~1.470 người, trong đó nhóm thuộc 1 trong 4 phân khúc rủi ro cao chiếm một tỷ trọng đáng kể trong tổng số ca nghỉ việc mỗi năm</td></tr>
+          <tr><td data-en="Cost per replacement">Chi phí thay thế mỗi ca nghỉ việc</td><td data-en="Common industry benchmark is roughly 20–30% of the role's annual salary, covering recruiting, retraining time, and lost productivity during transition">Theo benchmark phổ biến của ngành, thường rơi vào khoảng 20-30% lương năm của vị trí đó, gồm chi phí tuyển dụng, thời gian đào tạo lại, và năng suất mất đi trong giai đoạn chuyển giao</td></tr>
+          <tr><td data-en="Conservative scenario">Kịch bản thận trọng</td><td data-en="Even if the 4 interventions only reduce resignations in the high-risk group by a small fraction (roughly 1/5), the replacement cost saved still far exceeds rollout cost. Training, IDP-building, and policy changes are one-time costs, while savings repeat every year.">Ngay cả khi 4 can thiệp chỉ giúp giảm được một phần nhỏ (khoảng 1/5) số ca nghỉ việc trong nhóm rủi ro cao, chi phí thay thế tiết kiệm được vẫn vượt xa chi phí triển khai. Chi phí đào tạo, xây IDP, và điều chỉnh chính sách là chi phí một lần, trong khi tiết kiệm lặp lại mỗi năm.</td></tr>
+          <tr><td data-en="Conclusion">Kết luận</td><td data-en="Precise financial figures aren't needed to see this is worth investing in. Even in the most conservative scenario, the benefit clearly outweighs the cost.">Không cần số liệu tài chính chính xác tuyệt đối để thấy hướng đi này đáng đầu tư. Ngay ở kịch bản thận trọng nhất, lợi ích đã vượt chi phí rõ rệt.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;" data-en="Of the 4 interventions, the two Quick Wins (time-management training, building the IDP) are low-cost and fast to deploy; most of the budget should go to the Big Bets, especially the pay-progression path for the low-income group, the longest-lasting investment. For the Junior group specifically, long-term value (ELV, or Employee Lifetime Value) is far larger than the short-term estimate above. Keeping a promising junior employee for 2–3 extra years creates cumulative value that far exceeds a one-time replacement cost.">Trong 4 can thiệp, hai Quick Win (đào tạo quản lý thời gian, xây IDP) có chi phí thấp và triển khai nhanh; phần lớn ngân sách nên dồn cho Big Bet, đặc biệt lộ trình tăng lương cho nhóm thu nhập thấp, vì đây là khoản đầu tư có tác động lâu dài nhất. Với riêng nhóm Junior, giá trị dài hạn (ELV, tức Employee Lifetime Value) lớn hơn nhiều so với ước tính ngắn hạn ở trên. Giữ chân một nhân sự junior tiềm năng thêm 2-3 năm tạo ra giá trị tích lũy vượt xa chi phí thay thế một lần.</p>
+
+    <p style="margin-top:22px; font-weight:700;" data-en="Action plan">Kế hoạch hành động</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Intervention">Can thiệp</th><th data-en="Type">Loại</th><th data-en="Timeline">Timeline</th><th data-en="Lead">Chủ trì</th><th data-en="Dependency">Phụ thuộc</th></tr></thead>
+        <tbody>
+          <tr><td data-en="1. Overtime cap + time-management training">1. Giới hạn overtime + đào tạo quản lý thời gian</td><td>Quick Win</td><td data-en="Weeks 1–4">Tuần 1-4</td><td>HRBP + L&amp;D</td><td data-en="None, starts immediately">Không phụ thuộc, triển khai ngay</td></tr>
+          <tr><td data-en="2. IDP + more frequent reviews for Junior staff">2. IDP + tăng tần suất review cho Junior</td><td>Quick Win</td><td data-en="Weeks 1–6">Tuần 1-6</td><td data-en="HRBP + Direct managers">HRBP + Quản lý trực tiếp</td><td data-en="Runs in parallel with (1)">Song song với (1)</td></tr>
+          <tr><td data-en="3. Structured pay-progression path">3. Lộ trình tăng lương có cấu trúc</td><td>Big Bet</td><td data-en="Next quarter">Quý sau</td><td data-en="HRBP + Finance">HRBP + Tài chính</td><td data-en="Waits for early results from (1)–(2) to strengthen the budget case">Chờ kết quả bước đầu của (1)-(2) để củng cố đề xuất ngân sách</td></tr>
+          <tr><td data-en="4. Benefits / stock option policy review">4. Rà soát chính sách phúc lợi/stock option</td><td>Big Bet</td><td data-en="Next quarter">Quý sau</td><td data-en="HRBP + Legal">HRBP + Pháp lý</td><td data-en="Needs legal review before announcement">Cần tư vấn pháp lý trước khi công bố</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-line" data-en="The 2 Quick Wins (1–2) can start this quarter since they're low-cost and don't need major budget approval. The 2 Big Bets (3–4) need a more detailed proposal, suited to next quarter's approval cycle, once early results from the 2 Quick Wins are in to strengthen the case.">2 Quick Win (mục 1-2) có thể triển khai ngay trong quý này vì chi phí thấp và không cần phê duyệt ngân sách lớn. 2 Big Bet (mục 3-4) cần chuẩn bị đề xuất chi tiết hơn, phù hợp trình duyệt vào đầu quý sau, sau khi đã có kết quả bước đầu từ 2 Quick Win để củng cố lập luận.</p>
+
+    <!-- ===== VI. Measuring success ===== -->
+    <div class="subhead" data-en="VI. Measuring Success">VI. Đo lường thành công</div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th data-en="Metric">Chỉ số</th><th data-en="Expected threshold">Ngưỡng kỳ vọng</th><th data-en="Measurement point">Thời điểm đo</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td data-en="Turnover rate: Overtime group">Tỷ lệ nghỉ việc: nhóm Overtime</td><td data-en="Down from baseline after 2 quarters">Giảm so với baseline sau 2 quý</td><td data-en="End of Q2 and Q4 from rollout">Cuối Q2 và Q4 kể từ khi triển khai</td><td data-en="Compare to the same period last year to rule out seasonality">So sánh cùng kỳ năm trước để loại trừ yếu tố mùa vụ</td></tr>
+          <tr><td data-en="Turnover rate: Junior group">Tỷ lệ nghỉ việc: nhóm Junior</td><td data-en="Down from baseline after 2 quarters">Giảm so với baseline sau 2 quý</td><td data-en="End of Q2 and Q4">Cuối Q2 và Q4</td><td data-en="Track separately by department to catch differences">Theo dõi riêng theo từng phòng ban để phát hiện khác biệt</td></tr>
+          <tr><td data-en="Replacement recruiting cost">Chi phí tuyển dụng thay thế</td><td data-en="Down in proportion to the turnover reduction">Giảm tương ứng với mức giảm turnover</td><td data-en="Quarterly">Hàng quý</td><td data-en="Compared against intervention spend to calculate ROI">Đối chiếu với ngân sách đã chi cho các can thiệp để tính ROI</td></tr>
+          <tr><td data-en="Resignation within 6 months of IDP">Nghỉ việc trong 6 tháng sau IDP</td><td data-en="Clearly lower than Junior staff who didn't take part in an IDP">Thấp hơn rõ rệt so với nhóm Junior không tham gia IDP</td><td data-en="Continuous, reviewed quarterly">Theo dõi liên tục, đánh giá mỗi quý</td><td data-en="Fair Exchange indicator: kept separate from the Junior group's overall turnover rate">Chỉ báo trao đổi mất cân bằng (Fair Exchange): tách riêng khỏi tỷ lệ nghỉ việc chung của nhóm Junior</td></tr>
+          <tr><td data-en="Reaction from non-priority groups">Phản ứng của nhóm không ưu tiên</td><td data-en="No significant complaints or dissatisfaction">Không phát sinh khiếu nại/bất mãn đáng kể</td><td data-en="1 month after announcement">1 tháng sau khi công bố</td><td data-en="Measured via a short pulse survey, not the main engagement survey cycle">Đo qua pulse survey ngắn, không đợi đến kỳ engagement survey chính</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px; font-weight:700;" data-en="Continuous learning">Học hỏi liên tục</p>
+    <p data-en="Set a fixed review cadence instead of waiting until year-end to look back, with a monthly tracking dashboard and a quick review meeting with direct managers each quarter. If an intervention falls short after 2 quarters, use 5 Whys to trace the root cause and return to the problem-definition step (Part I), checking whether the original problem was correctly defined before concluding the intervention &quot;didn't work.&quot;">Thiết lập nhịp review cố định thay vì chờ đến cuối năm mới nhìn lại, với dashboard theo dõi cập nhật hàng tháng và họp đánh giá nhanh với quản lý trực tiếp mỗi quý. Nếu sau 2 quý, một can thiệp không đạt kỳ vọng, dùng 5 Whys để truy nguyên nhân gốc và quay lại bước định nghĩa vấn đề (Phần I), kiểm tra lại xem vấn đề ban đầu có được định nghĩa đúng không, trước khi kết luận can thiệp đó "không hiệu quả".</p>
+
+    <!-- ===== VII. Risks & Limitations ===== -->
+    <div class="subhead" data-en="VII. Risks &amp; Limitations">VII. Rủi ro &amp; Giới hạn</div>
+    <p style="font-weight:700;" data-en="Rollout risk (Pre-mortem)">Rủi ro triển khai (Pre-mortem)</p>
+    <p data-en="Assume 6 months from now these interventions have failed. What's the most likely cause, and who's responsible for preventing it:">Giả định 6 tháng sau, các can thiệp này thất bại. Nguyên nhân khả dĩ nhất là gì, và ai chịu trách nhiệm phòng ngừa:</p>
+    <ul class="tl-bullets" style="margin-top:10px;">
+      <li data-en="Fairness risk: employees outside the 4 segments feel left out for not being prioritized, causing wider dissatisfaction than the original problem. Prevention: HRBP communicates clearly that the segmentation criteria are data-based, not favoritism, from the first intervention announcement.">Rủi ro công bằng: các nhóm nhân sự khác, không thuộc 4 phân khúc trên, cảm thấy bị bỏ rơi vì không được ưu tiên, dẫn đến bất mãn lan rộng hơn cả vấn đề ban đầu. Phòng ngừa: HRBP truyền thông rõ tiêu chí phân loại dựa trên dữ liệu, không phải thiên vị, ngay khi công bố can thiệp đầu tiên.</li>
+      <li data-en="Execution risk: direct managers (per the AMO assessment in Part IV) lack sufficient motivation or authority, leaving the intervention only on paper. Prevention: put retention into direct managers' quarterly KPIs, paired with the fast-track process noted in the RACI table.">Rủi ro thực thi: quản lý trực tiếp (theo đánh giá AMO ở Phần IV) không đủ động lực hoặc thẩm quyền, khiến can thiệp chỉ tồn tại trên giấy. Phòng ngừa: đưa retention vào KPI quý của quản lý trực tiếp, đi kèm quy trình fast-track đã nêu ở bảng RACI.</li>
+      <li data-en="Wrong-causality risk: overtime may just be a mediator of a deeper issue (understaffing), per the confound already flagged in Part III. Prevention: HRBP runs a parallel staffing analysis with operations before applying a hard overtime cap.">Rủi ro nhân quả sai: overtime có thể chỉ là biến trung gian của một vấn đề sâu hơn (thiếu định biên), theo đúng nghi vấn đã nêu ở Phần III. Phòng ngừa: HRBP phối hợp bộ phận vận hành làm phân tích định biên song song, trước khi áp giới hạn overtime cứng.</li>
+      <li data-en="Data-ethics risk (per the Ethics Charter): some segments, such as &quot;married + no stock option,&quot; may be small enough to re-identify a specific individual when internal reports are shared. Prevention: HRBP checks each segment's sample size before publishing detailed figures, aggregates or rounds small samples, and applies the 4 TRUST-AI criteria (explainable, auditable, contestable, tied to human accountability) if any classification step uses algorithmic/AI assistance.">Rủi ro đạo đức dữ liệu (theo Ethics Charter): một số phân khúc, ví dụ "đã kết hôn + không có stock option", có thể đủ nhỏ để suy luận ngược ra cá nhân cụ thể khi chia sẻ báo cáo nội bộ. Phòng ngừa: HRBP kiểm tra kích thước từng phân khúc trước khi công bố số liệu chi tiết, gộp nhóm hoặc làm tròn số khi cỡ mẫu nhỏ, và áp 4 tiêu chí của khung TRUST-AI (giải thích được, kiểm toán được, có thể phản biện, gắn với trách nhiệm con người) nếu có bước phân loại nào dùng thuật toán/AI hỗ trợ.</li>
+    </ul>
+
+    <div class="limits-box" style="margin-top:20px;">
+      <p data-en="An honest analysis needs to state clearly both (1) what it doesn't prove, and (2) what it found.">Một phân tích trung thực cần nói rõ cả (1) điều nó không chứng minh được, và (2) điều nó phát hiện được.</p>
+      <ul>
+        <li data-en="This is exploratory/explanatory analysis, not a predictive model. The odds ratios show association, not automatic proof of one-directional causality.">Phân tích mang tính khám phá và giải thích (exploratory/explanatory), không phải mô hình dự đoán. Các con số odds ratio cho biết mối liên hệ, không tự động chứng minh quan hệ nhân quả một chiều.</li>
+        <li data-en="No time-series data or external industry benchmarking. Conclusions reflect a single point in time and need continued tracking to confirm a trend.">Không có dữ liệu chuỗi thời gian (time-series) hay đối chiếu với chuẩn ngành bên ngoài. Kết luận chỉ phản ánh một lát cắt thời điểm, cần theo dõi thêm để xác nhận xu hướng.</li>
+        <li data-en="The &quot;low&quot; income threshold is based on the internal median, not benchmarked against the external market. A market pay survey should be added before committing to a specific budget.">Ngưỡng thu nhập "thấp" được xác định theo trung vị nội bộ, không đối chiếu với mức lương thị trường bên ngoài. Cần bổ sung khảo sát lương thị trường trước khi cam kết ngân sách cụ thể.</li>
+        <li data-en="The qualitative interview round (Part IV) is a proposed next step, not a completed result. It should be run before full rollout, rather than relying solely on the quantitative findings.">Phần phỏng vấn định tính (Phần IV) là bước đề xuất bổ sung, chưa phải kết quả đã có. Cần thực hiện trước khi triển khai đại trà, không dựa hoàn toàn vào số liệu định lượng.</li>
+      </ul>
+    </div>
+
+    <!-- ===== VIII. Data & method sources ===== -->
+    <div class="subhead" data-en="VIII. Data &amp; Method Sources">VIII. Nguồn dữ liệu &amp; phương pháp</div>
+    <ul class="tl-bullets">
+      <li data-en="Data: IBM HR Analytics Employee Attrition &amp; Performance, a public HR dataset used for this analysis (Kaggle).">Dữ liệu: IBM HR Analytics Employee Attrition &amp; Performance, bộ dữ liệu nhân sự dùng cho phân tích (Kaggle).</li>
+      <li data-en="Statistical method: Exploratory Data Analysis, Chi-Square Test, and Fisher's Exact Test, run in RStudio.">Phương pháp thống kê: Exploratory Data Analysis, Chi-Square Test, Fisher's Exact Test, thực hiện trên RStudio.</li>
+      <li data-en="Decision framework: Framework A.C.T.S. (Alignment, Concentricity, Triggers, Sustainability), a personal framework informed by Conn &amp; McLean, Minto, IIBA, Ferrar &amp; Green, Bock, Mike West, Appelbaum et al., Boxall &amp; Purcell, Prosci, Croll &amp; Yoskovitz, Boyd, Kahneman/Sibony/Sunstein, and Edmondson.">Khung ra quyết định: Framework A.C.T.S. (Alignment, Concentricity, Triggers, Sustainability), khung nguyên tắc cá nhân, tham khảo Conn &amp; McLean, Minto, IIBA, Ferrar &amp; Green, Bock, Mike West, Appelbaum et al., Boxall &amp; Purcell, Prosci, Croll &amp; Yoskovitz, Boyd, Kahneman/Sibony/Sunstein, Edmondson.</li>
+    </ul>
+    <p class="note-line" data-en="Note: this Decision Memo is a separate, self-authored practice case study for portfolio purposes. It draws on publicly observed patterns in the same public dataset used by the exploratory GitHub project listed on the homepage, but is not that project and isn't tied to any real employer.">Lưu ý: Decision Memo này là một tình huống thực hành riêng, tự thực hiện cho mục đích portfolio. Nó tham khảo các phát hiện công khai trên cùng bộ dữ liệu công khai với dự án GitHub liệt kê ở trang chủ, nhưng không phải cùng một dự án và không gắn với một công ty thật nào.</p>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-en="© Lê Quang Giảng: Updated 2026">© Lê Quang Giảng: Cập nhật 2026</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
